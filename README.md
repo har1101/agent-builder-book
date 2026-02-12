@@ -32,8 +32,8 @@ docker compose version
 ## クローンして初回ビルド
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>/samplebook
+git clone https://github.com/ryuki-imachi/review-book.git
+cd review-book/samplebook
 docker compose run --rm review rake pdf
 ```
 
@@ -73,7 +73,7 @@ docker compose run --rm review rake web
 例: `mysecondbook` を追加する場合
 
 ```bash
-cd <YOUR_REPOSITORY_NAME>
+cd review-book
 
 # 1) Re:VIEW プロジェクトを初期化（<repo>/mysecondbook が作成される）
 docker run --rm -v "$PWD":/work -w /work \
@@ -106,3 +106,11 @@ A5 レイアウトで柱（ヘッダー）が重なる問題に対して、以�
 
 - Re:VIEW 実行環境: `vvakame/review:5.9`
 - 実行方式: Docker Compose
+
+## 参考サイト
+
+- Re:VIEW 公式リポジトリ: https://github.com/kmuto/review
+- Re:VIEW クイックスタート: https://github.com/kmuto/review/blob/master/doc/quickstart.md
+- Docker イメージ（Re:VIEW）: https://github.com/vvakame/docker-review
+- Docker Hub（vvakame/review）: https://hub.docker.com/r/vvakame/review
+- TechBooster ReVIEW-Template: https://github.com/TechBooster/ReVIEW-Template
