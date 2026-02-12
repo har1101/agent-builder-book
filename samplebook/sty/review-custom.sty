@@ -1,0 +1,13 @@
+% for user-defined macro
+%
+% Avoid header text collisions on narrow pages (e.g., A5) by showing
+% chapter header only on even pages and section header only on odd pages.
+\fancyhead{}
+\fancyhead[LE]{\gtfamily\sffamily\bfseries\upshape \leftmark}
+\fancyhead[RO]{\gtfamily\sffamily\bfseries\upshape \rightmark}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+
+% Keep running heads concise.
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}

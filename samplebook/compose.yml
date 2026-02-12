@@ -1,0 +1,6 @@
+services:
+  review:
+    image: vvakame/review:5.9
+    working_dir: /book
+    volumes:
+      - .:/book
